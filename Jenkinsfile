@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'start build'
-                bat 'npm run-script build'
+                bat 'npm run build'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'start Test'
-                bat 'npm run-script test'
+                bat 'npm run test'
             }
         }
     }
